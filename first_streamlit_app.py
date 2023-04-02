@@ -54,10 +54,3 @@ try:
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
-streamlit.stop()
-  
-add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
-streamlit.write('The user entered ', add_my_fruit)
-
-#This will will not work properly
-my_cur.execute ("insert into fruit_load_list values ('from streamlit')")
